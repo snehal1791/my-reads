@@ -37,7 +37,7 @@ onShelfChange = (selectedBook, shelf) => {
     console.log('hello', process.env.PUBLIC_URL);
     return (
       <div className="app">
-       <Route path={process.env.PUBLIC_URL + '/search'} render={({history}) => (
+       <Route path={process.env.PUBLIC_URL + '/myreads/search'} render={({history}) => (
           <SearchBook 
             books={this.state.books}
             onShelfChange={(book, shelf) => {
