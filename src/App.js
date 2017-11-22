@@ -34,7 +34,7 @@ onShelfChange = (selectedBook, shelf) => {
 }
 
   render() {
-    console.log(process.env.PUBLIC_URL);
+    console.log('hello', process.env.PUBLIC_URL);
     return (
       <div className="app">
        <Route path={process.env.PUBLIC_URL + '/search'} render={({history}) => (
@@ -42,7 +42,7 @@ onShelfChange = (selectedBook, shelf) => {
             books={this.state.books}
             onShelfChange={(book, shelf) => {
               this.onShelfChange(book, shelf)
-              history.push('/')}}/>
+              history.push(process.env.PUBLIC_URL + '/')}}/>
         )}/>
        <Route path={process.env.PUBLIC_URL + '/'} exact render={() => (
           <ListBooks 
