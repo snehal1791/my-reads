@@ -41,20 +41,22 @@ class SearchBook extends Component {
        				to="/">Close</Link>
               <div className="search-books-input-wrapper">
                 <input 
-      				type="text" 
-      				placeholder="Search by title or author"
-      				onChange={(event) => this.onInputChange(event.target.value)}/>
+      			type="text" 
+      			placeholder="Search by title or author"
+      			onChange={(event) => this.onInputChange(event.target.value)}
+		/>
               </div>
             </div>
             <div className="search-books-results">
-				<ol className="books-grid">
-					{books && books.map((book, index) =>
+		<ol className="books-grid">
+		{books && books.map((book, index) =>
                      <BookShelf
                        	key={index}
                         book={book}
-                        onShelfChange={onShelfChange}/>
+                        onShelfChange={onShelfChange}
+			/>
                      )}
-				</ol> 
+		</ol> 
             </div>
           </div>
       )
