@@ -38,16 +38,16 @@ onShelfChange = (selectedBook, shelf) => {
       <div className="app">
        <Route path="/search" render={({history}) => (
           <SearchBook 
-        books={this.state.books}
-      onShelfChange={(book, shelf) => {
-          this.onShelfChange(book, shelf)
-          history.push('/')}}/>
-    )}/>
+            books={this.state.books}
+            onShelfChange={(book, shelf) => {
+              this.onShelfChange(book, shelf)
+              history.push('/')}}/>
+        )}/>
        <Route path="/" exact render={() => (
           <ListBooks 
             books={this.state.books}
-      onShelfChange={this.onShelfChange}/>
-    )}/>
+            onShelfChange={this.onShelfChange}/>
+        )}/>
       </div>
     )
   }
