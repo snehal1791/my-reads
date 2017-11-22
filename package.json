@@ -1,5 +1,4 @@
 {
-  "homepage": "https://snehal1791.github.io/my-reads",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "prop-types": "^15.6.0",
@@ -11,8 +10,6 @@
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
