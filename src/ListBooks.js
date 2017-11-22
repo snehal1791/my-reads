@@ -73,7 +73,7 @@ class ListBooks extends Component {
 		</div>
       	    </div>
             <div className="open-search">
-              <Link to="/search" className="add-book">Add a book</Link>
+              <Link to=path={process.env.PUBLIC_URL + '/search'} className="add-book">Add a book</Link>
             </div>
           </div>
       )
