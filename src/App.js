@@ -43,7 +43,7 @@ onShelfChange = (selectedBook, shelf) => {
               this.onShelfChange(book, shelf)
               history.push('/')}}/>
         )}/>
-       <Route path="/" exact render={() => (
+       <Route path={process.env.PUBLIC_URL + '/'} exact render={() => (
           <ListBooks 
             books={this.state.books}
             onShelfChange={this.onShelfChange}/>
