@@ -6,12 +6,12 @@ class BookShelf extends Component {
     book: PropTypes.array.isRequired
   }
  render() {
-   const { book, onShelfChange } = this.props;
-	// Get the URL of the image for each book in the shelf
-	let imageLinks = book ? book.imageLinks : '';
-	let coverURL = imageLinks ? imageLinks.thumbnail : '';
-// Returns DOM, onShelfChange method gets called when shelf is changed
-// Props for the onShelfChange method are returned back to the parent component.
+  const { book, onShelfChange } = this.props;
+  // Get the URL of the image for each book in the shelf
+  let imageLinks = book ? book.imageLinks : '';
+  let coverURL = imageLinks ? imageLinks.thumbnail : '';
+  // Returns DOM, onShelfChange method gets called when shelf is changed
+  // Props for the onShelfChange method are returned back to the parent component.
   return(
     <li >
       <div className="book">
